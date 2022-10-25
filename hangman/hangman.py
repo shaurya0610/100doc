@@ -31,15 +31,13 @@ while not end_of_game:
         for position in range(len(chosen_word)):
             if chosen_word[position] == guess:
                 display[position] = guess
-                
+                list_of_guesses += guess
     else:
         print(f"You've already guessed {guess}")
     
-    if (guess not in chosen_word) and (guess not in list_of_guesses):
+    if guess not in chosen_word:
         print("You've guessed a letter that's not a part of the word. You lose a life.")
         lives -= 1
-        
-    list_of_guesses += guess
     
     print(stages[lives])
     print(display)
