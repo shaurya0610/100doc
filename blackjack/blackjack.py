@@ -64,7 +64,7 @@ while play_game:
     blackjack()
     
     while sum(computer_cards) < 17:
-        computer_cards.append(cards[randint(0, 12)]
+        computer_cards.append(cards[randint(0, 12)])
     
     if sum(player_cards)!=21 and sum(computer_cards)!=21 and sum(player_cards)<21:
         if sum(computer_cards) > 21:
