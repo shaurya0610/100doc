@@ -1,4 +1,4 @@
-import coffee_machine_data
+from coffee_machine_data import *
 
 money_in_machine = 0
 current_resources = resources
