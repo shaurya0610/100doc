@@ -77,23 +77,6 @@ def coffee_machine():
             print(f"Here is your ${round(money_inserted - 3.0, 2)} in change.")
             money_in_machine += 3.0
 
-    # TODO 7. Make Coffee.
-    # a. If the transaction is successful and there are enough resources to make the drink the
-    # user selected, then the ingredients to make the drink should be deducted from the
-    # coffee machine resources.
-    # E.g. report before purchasing latte:
-    # Water: 300ml
-    # Milk: 200ml
-    # Coffee: 100g
-    # Money: $0
-    # Report after purchasing latte:
-    # Water: 100ml
-    # Milk: 50ml
-    # Coffee: 76g
-    # Money: $2.5
-    # b. Once all resources have been deducted, tell the user “Here is your latte. Enjoy!”. If
-    # latte was their choice of drink.
-
     if user_input == "espresso":
         current_resources["water"] -= 50
         current_resources["coffee"] -= 18
