@@ -89,7 +89,7 @@ def coffee_machine():
         current_resources["milk"] -= 100
         current_resources["coffee"] -= 24
 
-    print(f"Here is your {user_input}. Enjoy!")
+    print(f"Here is your {user_input}☕. Enjoy!")
     coffee_machine()
 
 
